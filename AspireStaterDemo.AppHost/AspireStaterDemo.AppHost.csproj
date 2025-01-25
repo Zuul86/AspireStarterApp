@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../AspireStarterDemo.Angular/AspireStarterDemo.Angular.csproj" />
     <ProjectReference Include="..\AspireStaterDemo.ApiService\AspireStaterDemo.ApiService.csproj" />
     <ProjectReference Include="..\AspireStaterDemo.Web\AspireStaterDemo.Web.csproj" />
   </ItemGroup>
