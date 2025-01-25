@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/AspireStaterDemo.Web.props" />
+</Project>
