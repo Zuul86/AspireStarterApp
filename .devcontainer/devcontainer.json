@@ -1,0 +1,19 @@
+{
+  "name": "AspireStarterApp (.NET 10)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "ms-dotnettools.aspire"
+      ]
+    }
+  },
+  "postCreateCommand": "dotnet restore AspireStarterApp.sln",
+  "remoteUser": "vscode"
+}

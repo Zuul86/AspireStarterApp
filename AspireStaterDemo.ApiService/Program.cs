@@ -1,5 +1,3 @@
-using Microsoft.OpenApi.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire client integrations.
@@ -11,11 +9,6 @@ builder.Services.AddProblemDetails();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Weather API", Version = "v1" });
-});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,13 +18,6 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
-app.UseSwagger();
-
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("v1/swagger.json", "My API V1");
-});
 
 string[] summaries = ["Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"];
 
