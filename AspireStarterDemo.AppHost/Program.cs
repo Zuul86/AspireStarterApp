@@ -1,8 +1,8 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var apiService = builder.AddProject<Projects.AspireStaterDemo_ApiService>("apiservice");
+var apiService = builder.AddProject<Projects.AspireStarterDemo_ApiService>("apiservice");
 
-builder.AddProject<Projects.AspireStaterDemo_Web>("webfrontend")
+builder.AddProject<Projects.AspireStarterDemo_Web>("webfrontend")
     .WithExternalHttpEndpoints()
     .WithReference(apiService)
     .WaitFor(apiService);

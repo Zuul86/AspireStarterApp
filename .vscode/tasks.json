@@ -21,7 +21,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "set -euo pipefail; pids=$(ps -eo pid,args | awk '/\\/workspaces\\/AspireStarterApp\\/.+\\/bin\\/Debug\\/net10\\.0\\/(AspireStaterDemo\\.AppHost|AspireStaterDemo\\.ApiService|AspireStarterDemo\\.Angular|AspireStaterDemo\\.Web)( |$)/ {print $1}' | sort -u | xargs); if [[ -n \"${pids:-}\" ]]; then kill $pids || true; sleep 1; kill -9 $pids || true; fi; for p in 17277 15083 21275 22182 7026 5116 7088 5297 7528 5413; do lsof -ti tcp:$p | xargs -r kill -9 || true; done"
+        "set -euo pipefail; pids=$(ps -eo pid,args | awk '/\\/workspaces\\/AspireStarterApp\\/.+\\/bin\\/Debug\\/net10\\.0\\/(AspireStarterDemo\\.AppHost|AspireStarterDemo\\.ApiService|AspireStarterDemo\\.Angular|AspireStarterDemo\\.Web)( |$)/ {print $1}' | sort -u | xargs); if [[ -n \"${pids:-}\" ]]; then kill $pids || true; sleep 1; kill -9 $pids || true; fi; for p in 17277 15083 21275 22182 7026 5116 7088 5297 7528 5413; do lsof -ti tcp:$p | xargs -r kill -9 || true; done"
       ],
       "problemMatcher": []
     },

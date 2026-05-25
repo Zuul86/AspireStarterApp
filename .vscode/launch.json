@@ -5,7 +5,7 @@
       "name": "Aspire AppHost (Debug)",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/AspireStaterDemo.AppHost/AspireStaterDemo.AppHost.csproj",
+      "projectPath": "${workspaceFolder}/AspireStarterDemo.AppHost/AspireStarterDemo.AppHost.csproj",
       "preLaunchTask": "build",
       "postDebugTask": "stop-aspire"
     },
@@ -13,7 +13,7 @@
       "name": "Aspire AppHost (Debug Clean Start)",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/AspireStaterDemo.AppHost/AspireStaterDemo.AppHost.csproj",
+      "projectPath": "${workspaceFolder}/AspireStarterDemo.AppHost/AspireStarterDemo.AppHost.csproj",
       "preLaunchTask": "clean-build-aspire",
       "postDebugTask": "stop-aspire"
     }

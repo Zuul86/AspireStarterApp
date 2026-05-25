@@ -1,4 +1,4 @@
-namespace AspireStaterDemo.Web;
+namespace AspireStarterDemo.Web;
 
 public class WeatherApiClient(HttpClient httpClient)
 {
