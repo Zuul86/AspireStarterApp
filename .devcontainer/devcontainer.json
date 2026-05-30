@@ -14,6 +14,6 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet restore AspireStarterApp.sln",
+  "postCreateCommand": "dotnet restore AspireStarterApp.slnx",
   "remoteUser": "vscode"
 }
